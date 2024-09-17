@@ -9,11 +9,17 @@ numbering:
 
 One of the main advantages of articles written in MyST Markdown is the fact that you can bundle several types of outputs (such as figures, tables, equations, etc.) from your Jupyter Notebooks in a single document. This is made possible by the use of `directives`, which are special commands that instruct MyST Markdown to include the content of a notebook, a file, or a chunk of text in your document or cite references. You can use DOIs, [](https://doi.org/10.31219/osf.io/h89js) or a local bibliography file (`paper.bib`) for citations @Boudreau2023.
 
+
+:::{figure} static/banner.jpg
+
+A funny take on the difference between articles with code and articles from code.
+:::
+
 Let's see how directives work with a simple example by rendering a video from an external source:
 
-:::{figure} <video controls src="https://cdn.curvenote.com/0191bd75-1494-72f5-b48a-a0aaad296e4c/public/links-8237f1bb937ea247c2875ad14e560512.mp4" title="./videos/links.mp4"></video>
-
-An example of a video embedded in a MyST Markdown document!
+:::{iframe} https://cdn.curvenote.com/0191bd75-1494-72f5-b48a-a0aaad296e4c/public/links-8237f1bb937ea247c2875ad14e560512.mp4
+:label: figvid
+:width: 100%
 :::
 
 Yet, the main purpose of this article is to not to showcase all the [authoring tools](https://mystmd.org/guide/typography) available in MyST Markdown, but rather to provide a simple template to get you started with your own article to publish on NeuroLibre.
@@ -34,6 +40,9 @@ flowchart LR
   D --> I[HTML]
   D <--> J[JATS]
 ```
+
+Or you can see how hover-over links work for [wikipedia sources](https://en.wikipedia.org/wiki/Wikipedia#:~:text=Wikipedia%20is%20a%20free%20content,and%20the%20wiki%20software%20MediaWiki.) and cross references figures (e.g., [Fig. %sf](#fig1), [Figure %sf](#fig2), [Video %sf](#figvid)).
+
 :::
 
 Typically, when publishing an article following the traditional route, you would write your article in a word processor where you need to deal with the generation of figures, tables etc. elsewhere, and then bring them together in the final document manually. This eventually leads to a cluttered set of files, code, dependencies, and even data that are hard to manage in the long run. If you've been publishing articles for a while, you probably know what we are talking about:
@@ -46,18 +55,28 @@ Typically, when publishing an article following the traditional route, you would
 
 MyST Markdown offers a powerful solution to this by allowing you to create an article ✨from code✨, linking all the pieces of your executable and narrative content together in the body of this one document: your canvas.
 
+:::{figure} https://cdn.curvenote.com/0191bd75-1494-72f5-b48a-a0aaad296e4c/public/reuse-jupyter-output-2e6bfa91772dbb6bbc022dc6aee80d2b.webp
+:label: fig0
+
+An article with two figures created in Jupyter Notebooks. Each figure can be labeled directly in the notebook and reused in any other page directly.
+:::
+
+
+
 For example, the following figure is the output of the `content/fig_1.ipynb` notebook:
 
-:::{figure} content/fig_1.png
+:::{figure} #fig1cell
+:label: fig1
 
-An example of a figure generated from a Jupyter Notebook that lives in the `content` folder of this repository.
+An example of a figure generated from a Jupyter Notebook that lives in the `content` folder of this repository. Check `content/figure_1.ipynb` to see how this figure was generated and where the label `#fig1cell` is defined.
 :::
 
 Here is another figure generated from another notebook:
 
-:::{figure} content/fig_2.png
+:::{figure} #fig2cell
+:label: fig2
 
-An example of a figure generated from a Jupyter Notebook that lives in the `content` folder of this repository.
+An example of a figure generated from a Jupyter Notebook that lives in the `content` folder of this repository.  Check `content/figure_1.ipynb` to see how this figure was generated and where the label `#fig2cell` is defined.
 :::
 
 Both interactive, cool right! All your assets are centralized in this one document, which ideally lives in a GitHub repository. You may forget what you did, but your commit history will be there to remind you.
