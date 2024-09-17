@@ -1,0 +1,41 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: 'Demystifying MyST: The most powerful preprint authoring tool'
+  subtitle: A template for reproducible preprints
+  thebe:
+    binder:
+      url: https://test.conp.cloud
+      repo: neurolibre/mystical-article
+      ref: HEAD
+  authors:
+    - name: Agah Karakuzu
+      orcid: 0000-0001-7283-271X
+      affiliations:
+        - NeuroPoly, Polytechnique Montreal, Quebec, Canada
+        - Montreal Heart Institute, Montreal, Quebec, Canada
+    - name: Robo Neuro
+      affiliations:
+        - NeuroLibre, Montreal, Quebec, Canada
+  keywords:
+    - reproducible publishing
+    - mystmd
+    - next-gen preprints
+  github: https://github.com/neurolibre/mystical-article
+  banner: static/banner.jpg
+  venue: Neurolibre
+  subject: Living Preprint
+  numbering:
+    headings: true
+  doi: 10.55458/neurolibre.xxxxx
+  open_access: true
+  license: CC-BY-4.0
+  abbreviations:
+    MyST: Markedly Structured Markdown
+  bibliography:
+    - paper.bib
+  resources:
+    - content/figure1.ipynb
+    - content/figure2.ipynb
+site:
+  template: article-theme
