@@ -5,7 +5,7 @@ project:
   subtitle: A template for reproducible preprints
   thebe:
     binder:
-      url: https://mybinder.org
+      url: https://binder-preview.neurolibre.org
       repo: neurolibre/mystical-article
       ref: HEAD
   authors:
@@ -42,5 +42,10 @@ site:
 
 neurolibre:
   rees:
-    repo: neurolibre/mystical-article
-    ref: 43aff5ae300e0a3108710290871703bb22a3e29f
+    runtime:
+      - name: neurolibre/mystical-article
+        ref: 43aff5ae300e0a3108710290871703bb22a3e29f
+    data:
+      - src: https://raw.githubusercontent.com/plotly/datasets/master/hobbs-pearson-trials.csv
+        dst: ../data
+        projectName: neurolibre-demo-dataset
