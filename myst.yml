@@ -39,3 +39,8 @@ project:
     - content/figure2.ipynb
 site:
   template: article-theme
+
+neurolibre:
+  rees:
+    repo: neurolibre/mystical-article
+    ref: 43aff5ae300e0a3108710290871703bb22a3e29f
