@@ -5,7 +5,7 @@ project:
   subtitle: A template for reproducible preprints
   thebe:
     binder:
-      url: https://binder-preview.neurolibre.org
+      url: https://binder-preview.conp.cloud
       repo: neurolibre/mystical-article
       ref: HEAD
   authors:
