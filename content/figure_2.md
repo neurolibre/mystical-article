@@ -89,7 +89,7 @@ node_trace.text = node_text
 The next code cell will be generating the output we are interested in! We will `label` it, so that we can embed its output in the body of our main MyST article. That being said, depending on the purpose of your document (e.g., if you'd like to use the `book-theme` for an interactive tutorial) you may not be interested in embedding the output of a code cell.
 
 ```{code-cell} python
-#| label: fig2cell
+:label: fig2cell
 
 fig = go.Figure(data=[edge_trace, node_trace],
              layout=go.Layout(

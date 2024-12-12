@@ -79,7 +79,7 @@ Here is another figure generated from another notebook:
 :::{figure} #fig2cell
 :label: fig2
 
-An example of a figure generated from a Jupyter Notebook that lives in the `content` folder of this repository.  Check `content/figure_1.ipynb` to see how this figure was generated and where the label `#fig2cell` is defined.
+An example of a figure generated from a Jupyter Notebook that lives in the `content` folder of this repository.  Check `content/figure_2.md` to see how this figure was generated and where the label `#fig2cell` is defined.
 :::
 
 Both interactive, cool right! All your assets are centralized in this one document, which ideally lives in a GitHub repository. You may forget what you did, but your commit history will be there to remind you.
