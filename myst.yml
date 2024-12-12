@@ -64,8 +64,8 @@ project:
   doi: 10.55458/neurolibre.xxxxx # Production will override this.
   open_access: true
   license:
-    - content: CC-BY-4.0
-    - code: MIT
+    content: CC-BY-4.0
+    code: MIT
   abbreviations:
     MyST: Markedly Structured Markdown
   bibliography:
