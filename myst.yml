@@ -79,7 +79,6 @@ site:
     favicon: static/favicon.ico # Production will override this for branding.
     logo: static/logo.png # Production will override this for branding.
     twitter: neurolibre
-  template: article-theme
 
 # This section is under development
 neurolibre:
