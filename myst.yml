@@ -79,14 +79,3 @@ site:
     favicon: static/favicon.ico # Production will override this for branding.
     logo: static/logo.png # Production will override this for branding.
     twitter: neurolibre
-
-# This section is under development
-neurolibre:
-  rees:
-    runtime:
-      - name: neurolibre/mystical-article
-        ref: 43aff5ae300e0a3108710290871703bb22a3e29f
-    data:
-      - src: https://raw.githubusercontent.com/plotly/datasets/master/hobbs-pearson-trials.csv
-        dst: ../data
-        projectName: neurolibre-demo-dataset
