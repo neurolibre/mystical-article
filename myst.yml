@@ -5,7 +5,7 @@ project:
   subtitle: A template for reproducible preprints
   thebe:
     binder:
-      url: https://binder-preview.conp.cloud # NeuroLibre binder URL, production will override this.
+      url: https://terrarium.evidencepub.io
       repo: neurolibre/mystical-article # Production will override this.
       ref: HEAD # Production will override this.
   authors:
